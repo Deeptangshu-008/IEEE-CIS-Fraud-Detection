@@ -1,0 +1,22 @@
+# Python
+
+**pycache**/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Jupyter
+
+.ipynb_checkpoints/
+
+# Ignore all data files
+
+data/
+
+# OS and editor files
+
+.DS_Store
+Thumbs.db
+.vscode/
+
