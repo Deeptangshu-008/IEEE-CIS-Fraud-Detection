@@ -51,7 +51,7 @@ The application allows users to upload transaction data in CSV format, generate 
 | 🤖 Base models        | CatBoost, LightGBM, XGBoost               |
 | 🧠 Final architecture | Stacking with Random Forest               |
 | 🌐 Application        | FastAPI + Streamlit                       |
-| 🚦 Deployment status  | Tested locally; public deployment pending |
+| 🚦 Deployment status  | Tested locally with available public deployment |
 
 ## 🎯 Project Objectives
 
