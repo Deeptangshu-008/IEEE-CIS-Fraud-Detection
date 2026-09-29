@@ -539,7 +539,7 @@ The current classification threshold is 0.5. Predicted labels are based on this 
 
 ## ☁️ Deployment Test
 
-The deployed application was successfully tested with a batch of 5,000 transactions.
+The deployed application was successfully tested with a batch of 10,000 transactions.
 
 | Metric                    | Result |
 | ------------------------- | -----: |
