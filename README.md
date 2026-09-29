@@ -537,6 +537,19 @@ The current classification threshold is 0.5. Predicted labels are based on this 
 
 **Note:** This application is intended for demonstration and educational purposes. Do not upload sensitive financial or personal information.
 
+## ☁️ Deployment Test
+
+The deployed application was successfully tested with a batch of 5,000 transactions.
+
+| Metric                    | Result |
+| ------------------------- | -----: |
+| Transactions processed    | 10,000 |
+| Predicted fraud cases     |    151 |
+| Predicted fraud rate      |  1.51% |
+| Average fraud probability |  3.22% |
+
+These are application inference test results, not ground-truth model accuracy metrics.
+
 
 ## 💡 Key Learnings
 
