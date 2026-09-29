@@ -161,8 +161,6 @@ IEEE-CIS-Fraud-Detection/
 │       ├── lightgbm_test_predictions.csv
 │       └── xgboost_test_predictions.csv
 │
-├── src/
-│
 ├──📄.gitignore
 ├──📄README.md
 ├──📄requirements.txt
