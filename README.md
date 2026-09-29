@@ -525,6 +525,19 @@ The Streamlit application accepts CSV files containing transaction-level feature
 
 The pipeline performs required feature transformations and aligns the data to the expected model schema. Arbitrary CSV files are not guaranteed to be compatible.
 
+## 🖥️ How to Use
+
+1. Open the [Live Application](https://ieee-cis-fraud-detection-kr9phkxkggjugdkqzhcy76.streamlit.app/).
+2. Upload a CSV file containing raw transaction data with the expected input features.
+3. Click **Predict Fraud**.
+4. View the fraud probabilities and predicted fraud labels.
+5. Download the results as a CSV file.
+
+The current classification threshold is 0.5. Predicted labels are based on this threshold, while fraud probabilities are also provided for further analysis.
+
+**Note:** This application is intended for demonstration and educational purposes. Do not upload sensitive financial or personal information.
+
+
 ## 💡 Key Learnings
 
 - 🧹 Data cleaning and missing-value analysis on large datasets.
