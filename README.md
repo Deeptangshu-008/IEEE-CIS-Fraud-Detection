@@ -29,6 +29,17 @@ The objective of this project is to predict the target variable:
 
 The IEEE-CIS dataset contains transaction and identity-related information, with hundreds of anonymized features and substantial missing values. Fraud detection is an imbalanced classification problem, so model evaluation focuses on metrics such as ROC-AUC and PR-AUC in addition to threshold-based classification results.
 
+## 🌐 Live Demo
+
+Try the deployed application here:
+
+🔗 **[IEEE-CIS Fraud Detection — Live App](https://ieee-cis-fraud-detection-kr9phkxkggjugdkqzhcy76.streamlit.app/)**
+
+The application allows users to upload transaction data in CSV format, generate fraud probabilities, view predicted fraud cases and download the prediction results.
+
+
+
+
 | Project detail        | Description                               |
 | --------------------- | ----------------------------------------- |
 | 🎯 Problem type       | Binary classification                     |
