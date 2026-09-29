@@ -173,18 +173,22 @@ _The tree shows the main project organization; generated files may vary as exper
 
 ## 🔄 Machine Learning Workflow
 
-| Stage                       | Notebook / component                   | Purpose                                                           |
-| --------------------------- | -------------------------------------- | ----------------------------------------------------------------- |
-| 1️⃣ Data understanding & EDA | `01_data_understanding_eda.ipynb`      | Inspect data, target distribution, missingness, and feature types |
-| 2️⃣ Feature engineering      | `02_feature_engineering.ipynb`         | Merge data, extract features, and prepare model inputs            |
-| 3️⃣ Baseline models          | `03_baseline_models.ipynb`             | Train initial CatBoost, LightGBM, and XGBoost models              |
-| 4️⃣ 5-fold CV                | CV notebooks                           | Generate OOF predictions and evaluate model performance           |
-| 5️⃣ Baseline ensembling      | `05_baseline_ensembling.ipynb`         | Combine base-model predictions                                    |
-| 6️⃣ Seed experiments         | `06_seed_experiments.ipynb`            | Compare predictions from multiple random seeds                    |
-| 7️⃣ Weighted ensembling      | `07_weighted_ensembling.ipynb`         | Experiment with model-specific weights                            |
-| 8️⃣ Stacking                 | `08_stacking.ipynb`                    | Train a meta-model on base-model prediction features              |
-| 9️⃣ Final predictions        | `09_Final_Model_and_Predictions.ipynb` | Generate final test predictions and submission                    |
-| 🔟 Application              | `app/`                                 | Run inference through FastAPI and Streamlit                       |
+| Stage                        | Notebook / component                  | Purpose                                                           |
+| ---------------------------- | ------------------------------------- | ----------------------------------------------------------------- |
+| 1️⃣ Data understanding & EDA | `01_data_understanding_eda.ipynb`     | Inspect data, target distribution, missingness, and feature types |
+| 2️⃣ Feature engineering      | `02_feature_engineering.ipynb`        | Merge data, extract features, and prepare model inputs            |
+| 3️⃣ Baseline models          | `03_baseline_models.ipynb`            | Train initial CatBoost, LightGBM, and XGBoost models              |
+| 4️⃣ 5-fold CV                | CV notebooks                          | Generate OOF predictions and evaluate model performance           |
+| 5️⃣ Baseline ensembling      | `05_baseline_ensembling.ipynb`        | Combine base-model predictions                                    |
+| 6️⃣ Seed experiments         | `06_seed_experiments.ipynb`           | Compare predictions from multiple random seeds                    |
+| 7️⃣ Weighted ensembling      | `07_weighted_ensembling.ipynb`        | Experiment with model-specific weights                            |
+| 8️⃣ Stacking                 | `08_stacking.ipynb`                   | Train a meta-model on base-model prediction features              |
+| 9️⃣ Final predictions        | `9_Catboost_Test_Predictions.ipynb`   | Generate CatBoost test predictions                                |
+|                              | `10_XGBoost_Test_Predictions.ipynb`   | Generate XGBoost test predictions                                 |
+|                              | `11_LightGBM_Test_Predictions.ipynb`  | Generate LightGBM test predictions                                |
+|                              | `12_Final_Model_and_Submission.ipynb` | Combine final model predictions and prepare the Kaggle submission |
+| 🔟 Application               | `app/`                                | Run inference through FastAPI and Streamlit                       |
+
 
 ## 🧹 Data Preprocessing & Feature Engineering
 
