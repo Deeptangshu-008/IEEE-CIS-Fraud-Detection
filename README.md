@@ -4,14 +4,16 @@
 
 The project covers the complete ML workflow, from data exploration and feature engineering to cross-validation, model evaluation, OOF ensembling, stacking, and local application development.
 
+## 🛠️ Tech Stack
+
 <p align="center">
-  ![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)
-  ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-ML-orange?logo=scikitlearn&logoColor=white)
-  ![CatBoost](https://img.shields.io/badge/CatBoost-Boosting-yellow)
-  ![LightGBM](https://img.shields.io/badge/LightGBM-Boosting-green)
-  ![XGBoost](https://img.shields.io/badge/XGBoost-Boosting-red)
-  ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi)
-  ![Streamlit](https://img.shields.io/badge/Streamlit-Frontend-FF4B4B?logo=streamlit)
+  <img src="https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Scikit--learn-ML-orange?logo=scikitlearn&logoColor=white" alt="Scikit-learn">
+  <img src="https://img.shields.io/badge/CatBoost-Boosting-yellow" alt="CatBoost">
+  <img src="https://img.shields.io/badge/LightGBM-Boosting-green" alt="LightGBM">
+  <img src="https://img.shields.io/badge/XGBoost-Boosting-red" alt="XGBoost">
+  <img src="https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi" alt="FastAPI">
+  <img src="https://img.shields.io/badge/Streamlit-Frontend-FF4B4B?logo=streamlit" alt="Streamlit">
 </p>
 
 ---
