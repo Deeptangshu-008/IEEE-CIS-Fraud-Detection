@@ -1,4 +1,4 @@
-
+from inference import predict_fraud
 import streamlit as st
 import pandas as pd
 import requests
@@ -28,34 +28,20 @@ if uploaded_file is not None:
     st.write(f"Number of transactions: {len(df)}")
     st.dataframe(df.head(10), use_container_width=True)
 
-    
     if st.button("Predict Fraud", type="primary"):
-        records = json.loads(df.to_json(orient="records"))
-
         with st.spinner("Predicting fraud probabilities..."):
             try:
-                response = requests.post(
-                    "http://127.0.0.1:8000/predict_batch",
-                    json=records,
-                    timeout=300
-                )
-                response.raise_for_status()
-
-                result = response.json()
-                results = result["predictions"]
+                results = predict_fraud(df)
 
                 if len(results) != len(df):
-                    st.error("The number of predictions does not match the uploaded data.")
+                    st.error(
+                        "The number of predictions does not match "
+                        "the uploaded data."
+                    )
                     st.stop()
 
-            except requests.RequestException as e:
+            except Exception as e:
                 st.error(f"Prediction failed: {e}")
-                if e.response is not None:
-                    st.code(e.response.text)
-                st.stop()
-
-            except (KeyError, TypeError) as e:
-                st.error(f"Unexpected API response: {e}")
                 st.stop()
 
         df["fraud_probability"] = results
@@ -75,7 +61,6 @@ if uploaded_file is not None:
         ]
 
         st.success("Predictions completed!")
-
         st.subheader("Prediction Results")
 
         col1, col2, col3 = st.columns(3)
