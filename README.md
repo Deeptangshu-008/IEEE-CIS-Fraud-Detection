@@ -407,6 +407,7 @@ The probability is a model estimate. The binary class is determined by comparing
 
 In a 5,000-row test, the interface reported **81 predicted fraud transactions** and an **average fraud probability of 3.15%**. These are model predictions, not verified fraud labels.
 
+
 ## 🛠️ Technologies Used
 
 | Technology              | Purpose                                 |
@@ -497,7 +498,18 @@ Frontend:
 
 Both processes must remain running while using the local application. Stop a service with `Ctrl + C` in its terminal.
 
-> 🌍 **Deployment status:** The application has been tested locally. Public hosting and production configuration are still future steps.
+## 🚀 Deployment
+
+The Streamlit application is deployed using **Streamlit Community Cloud** and is publicly accessible through a live URL.
+
+* **Frontend:** Streamlit
+* **Inference:** Integrated Python ML pipeline
+* **Models:** CatBoost, XGBoost, LightGBM and Random Forest stacking model
+* **Hosting:** Streamlit Community Cloud
+
+The deployed application loads the trained models and preprocessors and performs feature engineering and inference directly when a user uploads a CSV file.
+
+FastAPI is also included in the project for API-based inference and local testing, but the currently deployed Streamlit application uses direct inference.
 
 ## 📥 Input Format
 
